@@ -1,7 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
+}
+img{
+  animation:spin 4s ease-in-out infinite;
+}
+
+@keyframes spin { 
+  0% { 
+      transform: rotateX(20deg);
+  } 
+  50%{
+      transform: rotateY(10deg);
+  }
+  100%{
+      transform: rotateX(20deg);
+  }
 }

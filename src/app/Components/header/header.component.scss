@@ -1,6 +1,6 @@
 header{
     background: linear-gradient(-45deg,  #262626, #202020, #1F1F1F);
-    animation: change 10s ease-in-out infinite;
+    animation: change 5s ease-in-out infinite;
     background-size: 400%, 400%;
     position: relative;
     padding-top: 10vh;
@@ -24,8 +24,10 @@ header{
                 width: 15%;
             }
             img{
-                margin: 5vh 0vh!important;
-                height: 70vh;
+                margin: 10vh 6vh!important;
+                bottom: 15vh;
+                float: right;
+                width: 30%!important;
             }
         }
         width: 80%;
@@ -49,10 +51,11 @@ header{
             }
         }
         img{
-            animation:spin 4s ease-in-out infinite;
-            margin: 10vh 5vh;
+            border-radius: 1000px;
+            margin: 12vh 20%;
             bottom: 15vh;
             float: right;
+            width: 60%;
         }
     }
 }
@@ -66,17 +69,5 @@ header{
     }
     100%{
         background-position:0 50%;
-    }
-}
-
-@keyframes spin { 
-    0% { 
-        transform: rotateX(10deg);
-    } 
-    50%{
-        transform: rotateY(5deg);
-    }
-    100%{
-        transform: rotateX(10deg);
     }
 }
