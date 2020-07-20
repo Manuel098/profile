@@ -13,7 +13,6 @@ export class GithubComponent implements OnInit {
   ngOnInit() {
     this.global.githubRepos().then(res => {
       this.repos = res;
-      console.log(res);
     });
   }
 

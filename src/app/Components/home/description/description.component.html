@@ -1,0 +1,25 @@
+<div class="description">
+    <h2>Acerca de mí</h2>
+    <p>
+        {{ presentation }}
+    </p>
+    <p>
+        {{ lenguajes }}
+    </p>
+    <h3>Un poco mas de mí...</h3>
+    <p>
+        {{ metodologias }}
+    </p>
+    <h3>Plataformas</h3>
+    <hr>
+    <br/>
+    <p>
+        {{ plataform }}
+    </p>
+    <br/>
+    <div class="redes" >
+        <a target="_blank" href={{red.url}} *ngFor="let red of redes">
+            <img matTooltip={{red.tooltip}} src={{red.imgUrl}} alt="redLink">
+        </a>
+    </div>
+</div>

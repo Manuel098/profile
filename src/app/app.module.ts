@@ -9,13 +9,17 @@ import { HeaderComponent } from './Components/header/header.component';
 import { HomeComponent } from './Components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GithubComponent } from './Components/home/github/github.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { DescriptionComponent } from './Components/home/description/description.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     GithubComponent,
     HomeComponent,
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserAnimationsModule,
