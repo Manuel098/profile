@@ -1,45 +1,8 @@
 <div class="reposConten">
     <h2>Repositorios de Github</h2>
     <p class="text">{{ description }}</p>
-    <div class="repo" *ngFor="let item of repos; let i = index">
-        <mat-card *ngIf="i%2==0" class="left">
-            <div class="imageLenguaje"  [ngSwitch]="item.language">
-                <div *ngSwitchCase="'PHP'">
-                    <img matTooltip="Lenguaje PHP" src="https://image.flaticon.com/icons/png/512/919/919830.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'C#'">
-                    <img matTooltip="Lenguaje C#" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'HTML'">
-                    <img matTooltip="Lenguaje de marcado HTML" src="https://www.atodocurso.com/sites/default/files/html.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'Dart'">
-                    <img matTooltip="Lenguaje Dart" src="https://dartpad.dev/dart-192.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'DTrace'">
-                    <img matTooltip="Lenguaje Dart" src="https://dartpad.dev/dart-192.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'JavaScript'">
-                    <img matTooltip="Lenguaje JavaScript" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'TypeScript'">
-                    <img matTooltip="Lenguaje TypeScript" src="https://lineadecodigo.com/wp-content/uploads/2017/08/typescript.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'Python'">
-                    <img matTooltip="Lenguaje Python" src="https://anthoncode.com/wp-content/uploads/2019/01/python-logo-png.png" alt="Lenguaje">
-                </div>
-                <div *ngSwitchCase="'Kotlin'">
-                    <img matTooltip="Lenguaje Kotlin" src="https://img.icons8.com/color/480/kotlin.png" alt="Lenguaje">
-                </div>
-            </div>
-            <div class="gitCont">
-                <h3>{{item.name}}</h3>
-                <hr>
-                <p>{{item.description}}</p>
-            </div>
-            <a target="_blank" mat-stroked-button href="{{item.html_url}}">Url to  <span>{{item.name}}</span></a>
-        </mat-card>
-        <mat-card *ngIf="i%2!=0" class="right">
+    <div class="repo">
+        <mat-card *ngFor="let item of repos; let i = index">
             <div class="imageLenguaje"  [ngSwitch]="item.language">
                 <div *ngSwitchCase="'PHP'">
                     <img matTooltip="Lenguaje PHP" src="https://image.flaticon.com/icons/png/512/919/919830.png" alt="Lenguaje">
