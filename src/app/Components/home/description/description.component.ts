@@ -38,7 +38,7 @@ export class DescriptionComponent implements OnInit {
     }, {
       url: 'https://www.udemy.com/user/jose-manuel-valdez-gonzalez/',
       imgUrl: 'https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png',
-      tooltip: 'Udemy'
+      tooltip: 'Necesita una cuenta de Udemy para ver el contenido'
     }
   ];
 

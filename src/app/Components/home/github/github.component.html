@@ -1,5 +1,6 @@
 <div class="reposConten">
     <h2>Repositorios de Github</h2>
+    <p class="text">{{ description }}</p>
     <div class="repo" *ngFor="let item of repos; let i = index">
         <mat-card *ngIf="i%2==0" class="left">
             <div class="imageLenguaje"  [ngSwitch]="item.language">
